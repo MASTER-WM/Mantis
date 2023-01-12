@@ -1,0 +1,4 @@
+INSTALL
+
+see the readme on the repo: https://github.com/bueltge/Chosen-for-MantisBT
+or the readme.md in this folder

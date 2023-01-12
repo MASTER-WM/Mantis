@@ -112,3 +112,4 @@ define( 'VIEW_ALL_INC_ALLOW', true );
 include( dirname( __FILE__ ) . DIRECTORY_SEPARATOR . 'view_all_inc.php' );
 
 layout_page_end();
+

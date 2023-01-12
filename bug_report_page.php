@@ -238,6 +238,8 @@ $t_form_encoding = '';
 if( $t_show_attachments ) {
 	$t_form_encoding = 'enctype="multipart/form-data"';
 }
+
+
 ?>
 <div class="col-md-12 col-xs-12">
 <form id="report_bug_form"
@@ -593,17 +595,16 @@ if( $t_show_attachments ) {
 <?php } ?>
 
 <?php if( $t_show_additional_info ) { ?>
+
 	<tr>
 		<th class="category">
-			<label for="additional_info"><?php print_documentation_link( 'additional_information' ) ?></label>
+			<span class="required">*</span><label for="additional_info"><?php print_documentation_link( 'additional_information' ) ?></label>
 		</th>
 		<td>
-			<?php # Newline after opening textarea tag is intentional, see #25839 ?>
-			<textarea class="form-control" <?php echo helper_get_tab_index() ?> id="additional_info" name="additional_info" cols="80" rows="10">
-<?php echo string_textarea( $f_additional_info ) ?>
-</textarea>
+			<input <?php echo helper_get_tab_index() ?> type="text" id="additional_info" name="additional_info" size="105" maxlength="128" value="<?php echo string_attribute( $f_summary ) ?>" required />
 		</td>
 	</tr>
+
 <?php } ?>
 <?php if( $t_show_tags ) { ?>
 	<tr>
@@ -768,6 +769,7 @@ if( $t_show_attachments ) {
 </div>
 </div>
 </form>
+
 </div>
 <?php
 layout_page_end();

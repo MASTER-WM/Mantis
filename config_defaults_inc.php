@@ -875,66 +875,8 @@ $g_default_language = 'auto';
  * @global array $g_language_choices_arr
  */
 $g_language_choices_arr = array(
-	'auto',
-	'afrikaans',
-	'amharic',
-	'arabic',
-	'arabicegyptianspoken',
-	'asturian',
-	'basque',
-	'belarusian_tarask',
-	'breton',
-	'bulgarian',
-	'catalan',
-	'chinese_simplified',
-	'chinese_traditional',
-	'croatian',
-	'czech',
-	'danish',
-	'dutch',
 	'english',
-	'estonian',
-	'finnish',
-	'french',
-	'galician',
-	'georgian',
-	'german',
-	'greek',
-	'hebrew',
-	'hungarian',
-	'icelandic',
-	'interlingua',
-	'italian',
-	'japanese',
-	'korean',
-	'latvian',
-	'lithuanian',
-	'luxembourgish',
-	'macedonian',
-	'norwegian_bokmal',
-	'norwegian_nynorsk',
-	'occitan',
 	'persian',
-	'polish',
-	'portuguese_brazil',
-	'portuguese_standard',
-	'ripoarisch',
-	'romanian',
-	'russian',
-	'serbian',
-	'serbian_latin',
-	'slovak',
-	'slovene',
-	'spanish',
-	'swedish',
-	'swissgerman',
-	'tagalog',
-	'turkish',
-	'ukrainian',
-	'urdu',
-	'vietnamese',
-	'volapuk',
-	'zazaki',
 );
 
 /**
@@ -942,63 +884,8 @@ $g_language_choices_arr = array(
  * @global array $g_language_auto_map
  */
 $g_language_auto_map = array(
-	'af' => 'afrikaans',
-	'am' => 'amharic',
-	'ar' => 'arabic',
-	'arz' => 'arabicegyptianspoken',
-	'ast' => 'asturian',
-	'eu' => 'basque',
-	'be-tarask' => 'belarusian_tarask',
-	'bg' => 'bulgarian',
-	'br' => 'breton',
-	'ca' => 'catalan',
-	'zh-cn, zh-sg, zh' => 'chinese_simplified',
-	'zh-hk, zh-tw' => 'chinese_traditional',
-	'hr' => 'croatian',
-	'cs' => 'czech',
-	'da' => 'danish',
-	'nl-be, nl' => 'dutch',
 	'en-us, en-gb, en-au, en' => 'english',
-	'et' => 'estonian',
-	'fi' => 'finnish',
-	'fr-ca, fr-be, fr-ch, fr' => 'french',
-	'gl' => 'galician',
-	'de-de, de-at, de-ch, de' => 'german',
-	'he' => 'hebrew',
-	'hu' => 'hungarian',
-	'is' => 'icelandic',
-	'ia' => 'interlingua',
-	'it-ch, it' => 'italian',
-	'ja' => 'japanese',
-	'ka' => 'georgian',
-	'ko' => 'korean',
-	'lv' => 'latvian',
-	'lt' => 'lithuanian',
-	'lb' => 'luxembourgish',
-	'mk' => 'macedonian',
-	'no' => 'norwegian_bokmal',
-	'nn' => 'norwegian_nynorsk',
-	'oc' => 'occitan',
 	'fa' => 'persian',
-	'pl' => 'polish',
-	'pt-br' => 'portuguese_brazil',
-	'pt' => 'portuguese_standard',
-	'ksh' => 'ripoarisch',
-	'ro-mo, ro' => 'romanian',
-	'ru-mo, ru-ru, ru-ua, ru' => 'russian',
-	'sr' => 'serbian',
-	'sr-latn' => 'serbian_latin',
-	'sk' => 'slovak',
-	'sl' => 'slovene',
-	'es-mx, es-co, es-ar, es-cl, es-pr, es' => 'spanish',
-	'sv-fi, sv' => 'swedish',
-	'gsw' => 'swissgerman',
-	'tl' => 'tagalog',
-	'tr' => 'turkish',
-	'uk' => 'ukrainian',
-	'vi' => 'vietnamese',
-	'vo' => 'volapuk',
-	'diq' => 'zazaki',
 );
 
 /**
@@ -1019,7 +906,7 @@ $g_fallback_language = 'english';
  * @see $g_cdn_enabled
  * @global string $g_font_family
  */
-$g_font_family = 'Open Sans';
+$g_font_family = 'IRANsans';
 
 /**
  * List the google fonts that the users are allowed to choose from.
@@ -1027,6 +914,7 @@ $g_font_family = 'Open Sans';
  * @global array $g_font_family_choices
  */
 $g_font_family_choices = array(
+	'IRANsans',
 	'Amiko',
 	'Architects Daughter',
 	'Archivo Narrow',
@@ -1065,6 +953,7 @@ $g_font_family_choices = array(
  * @global array $g_font_family_choices_local
  */
 $g_font_family_choices_local = array(
+	'IRANsans',
 	'Montserrat',
 	'Open Sans',
 	'Poppins'
@@ -1078,7 +967,7 @@ $g_font_family_choices_local = array(
  * browser window title
  * @global string $g_window_title
  */
-$g_window_title = 'MantisBT';
+$g_window_title = 'Karafs Bug Reporter';
 
 /**
  * OpenSearch engine title prefix.
@@ -1110,7 +999,7 @@ $g_favicon_image = 'images/favicon.ico';
  * Logo
  * @global string $g_logo_image
  */
-$g_logo_image = 'images/mantis_logo.png';
+$g_logo_image = 'images/logo.svg';
 
 /**
  * Logo URL link
@@ -3815,7 +3704,7 @@ $g_my_view_boxes = array(
  * syndication is not used, it is recommended to set it to OFF.
  * @global integer $g_rss_enabled
  */
-$g_rss_enabled = ON;
+$g_rss_enabled = OFF;
 
 
 #####################

@@ -429,7 +429,7 @@ function layout_navbar() {
 
 	echo '</div>';
 
-	echo '<div class="navbar-buttons navbar-header navbar-collapse collapse">';
+	echo '<div class="navbar-buttons navbar-header navbar-collapse collapse" >';
 	echo '<ul class="nav ace-nav">';
 	if (auth_is_user_authenticated()) {
 		# shortcuts button bar
@@ -1144,14 +1144,12 @@ function layout_footer() {
 
 	# Show MantisBT version and copyright statement
 	$t_version_suffix = '';
-	$t_copyright_years = ' 2000 - ' . date( 'Y' );
 	if( config_get_global( 'show_version' ) == ON ) {
 		$t_version_suffix = ' ' . htmlentities( MANTIS_VERSION . config_get_global( 'version_suffix' ) );
 	}
 	echo '<div class="col-md-6 col-xs-12 no-padding">' . "\n";
 	echo '<address>' . "\n";
-	echo '<strong>Powered by <a href="https://www.mantisbt.org" title="bug tracking software">MantisBT ' . $t_version_suffix . '</a></strong> <br>' . "\n";
-	echo "<small>Copyright &copy;$t_copyright_years MantisBT Team</small>" . '<br>';
+	echo '<strong> <a href="" title=""> ' . $t_version_suffix . '</a></strong> <br>' . "\n";
 
 	# Show optional user-specified custom copyright statement
 	$t_copyright_statement = config_get_global( 'copyright_statement' );
@@ -1174,11 +1172,11 @@ function layout_footer() {
 	if( !is_page_name( 'login_page' ) ) {
 		echo '<div class="col-md-6 col-xs-12">' . "\n";
 		echo '<div class="pull-right" id="powered-by-mantisbt-logo">' . "\n";
-		$t_mantisbt_logo_url = helper_mantis_url( 'images/mantis_logo.png' );
-		echo '<a href="https://www.mantisbt.org" '.
-			'title="Mantis Bug Tracker: a free and open source web based bug tracking system.">' .
+		$t_mantisbt_logo_url = helper_mantis_url( 'images/logo.svg' );
+		echo '<a href="" '.
+			'title="">' .
 			'<img src="' . $t_mantisbt_logo_url . '" width="102" height="35" ' .
-			'alt="Powered by Mantis Bug Tracker: a free and open source web based bug tracking system." />' .
+			'alt="" />' .
 			'</a>' . "\n";
 		echo '</div>' . "\n";
 		echo '</div>' . "\n";

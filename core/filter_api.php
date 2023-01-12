@@ -1339,7 +1339,7 @@ function filter_draw_selection_area() {
 
 					<form method="post" action="view_all_set.php">
 						<input type="hidden" name="type" value="<?php echo FILTER_ACTION_PARSE_ADD ?>" />
-						<input id="filter-bar-search-txt" type="text" size="16" class="input-xs"
+						<input id="filter-bar-search-txt" type="text" size="56" class="input-xs"
 							   placeholder="<?php echo lang_get( 'search' ) ?>"
 							   name="<?php echo FILTER_PROPERTY_SEARCH ?>"
 							   value="<?php echo string_attribute( $t_filter[FILTER_PROPERTY_SEARCH] ); ?>" />
